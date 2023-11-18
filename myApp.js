@@ -65,7 +65,7 @@ const findAndUpdate = (personName, done) => {
   Person.findByIdAndUpdate({name:personName}, {age:ageToSet}, {new:true}, (err, data) => {
     if(err) return console.error(err);
     done(null, data);
-  }); 
+  });
 }
   
 
